@@ -32,12 +32,12 @@ Należy znaleźć tekst jakiejś książki po angielsku i po polsku
 
 ## Wyniki
 
-![](C:/Users/marta/Desktop/Przechwytywanie5.PNG)
+![](data/Przechwytywanie5.PNG)
   
-![](C:/Users/marta/Desktop/Przechwytywanie1.PNG)
+![](data/Przechwytywanie1.PNG)
 
-![](C:/Users/marta/Desktop/Przechwytywanie2.PNG)
+![](data/Przechwytywanie2.PNG)
 
-![](C:/Users/marta/Desktop/Przechwytywanie3.PNG)
+![](data/Przechwytywanie3.PNG)
 
-![](C:/Users/marta/Desktop/Przechwytywanie4.PNG)
+![](datap/Przechwytywanie4.PNG)
