@@ -35,6 +35,8 @@ Należy znaleźć tekst jakiejś książki po angielsku i po polsku
 ![](data/Przechwytywanie5.PNG)
   
 ![](data/Przechwytywanie1.PNG)
+  
+![](data/Przechwytywanie6.PNG)
 
 ![](data/Przechwytywanie2.PNG)
 

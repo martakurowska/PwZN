@@ -14,7 +14,7 @@ args = parser.parse_args()
 with open(args.file, encoding="utf8") as file:
     x = defaultdict(int)
     for line in file:
-        verse = line.lower().translate({ord(i): None for i in ".,;!?()«»…—*"}).strip().split()
+        verse = line.lower().translate({ord(i): None for i in "123456789.,;!?()«»…-—―*"}).strip().split()
         for i in verse:
             x[i] += 1
 
