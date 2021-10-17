@@ -1,4 +1,4 @@
-Pytchon w Zastosowaniach Naukowych
+Python w Zastosowaniach Naukowych
 ================
 
 ## Laboratorium 1
