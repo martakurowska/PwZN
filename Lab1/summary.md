@@ -42,4 +42,4 @@ Należy znaleźć tekst jakiejś książki po angielsku i po polsku
 
 ![](data/Przechwytywanie3.PNG)
 
-![](datap/Przechwytywanie4.PNG)
+![](data/Przechwytywanie4.PNG)
