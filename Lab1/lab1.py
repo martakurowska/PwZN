@@ -27,6 +27,3 @@ graph = Pyasciigraph(line_length=60)
 
 for line in graph.graph(f"Histogram słów w pliku {args.file}", data):
     print(line)
-
-
-
