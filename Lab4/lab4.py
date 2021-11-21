@@ -33,7 +33,7 @@ url = f"https://jakdojade.pl/warszawa/trasa/?fc={fc}&tc={tc}&d={day}&h={hour}&ia
 
 driver.get(url)
 time.sleep(2)
-button1 = WebDriverWait(driver, 2).until(EC.presence_of_element_located(((By.XPATH, "/html/body/div[5]/div[1]/div[2]/div/div[6]/button[2]"))))
+button1 = WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[5]/div[1]/div[2]/div/div[6]/button[2]")))
 button1.click()
 button2 = driver.find_element(By.XPATH, "//*[@id=\"cn-planner\"]/div[1]/div/div[2]/div[2]/button[2]")
 button2.click()
