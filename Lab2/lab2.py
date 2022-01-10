@@ -3,6 +3,9 @@ import argparse
 import os
 import matplotlib.pyplot as plt
 from Simulation import Simulation
+import time
+
+t1 = time.time()
 
 parser = argparse.ArgumentParser(description="This script simulates Ising Method")
 parser.add_argument("N", help="Dimensions of grid", type=int)
@@ -22,6 +25,10 @@ S = Simulation(args.N, args.J, args.beta, args.B, args.steps, np.around(args.d, 
 
 for s in S:
     s.make_image()
+
+t2 = time.time()
+
+print(t2-t1)
 
 plt.plot(range(args.steps + 1), S.m)
 plt.ylabel("Magnetization")

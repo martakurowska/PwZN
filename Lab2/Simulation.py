@@ -35,9 +35,9 @@ class Simulation:
         for i in range(self.n):
             for j in range(self.n):
                 if self.arr[i, j] == 1:
-                    self.image.paste(Image.open("./data/spin_up.png"), (20 * j + 1, 20 * i + 1))
+                    self.image.paste(Image.open("./data/spin_up2.png"), (20 * j + 1, 20 * i + 1))
                 else:
-                    self.image.paste(Image.open("./data/spin_down.png"), (20 * j + 1, 20 * i + 1))
+                    self.image.paste(Image.open("./data/spin_down2.png"), (20 * j + 1, 20 * i + 1))
         self.image.save(f"./output/{self.f}{self.curr_step:0>3}.png")
 
     def hamiltonian(self):

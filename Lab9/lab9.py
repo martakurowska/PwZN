@@ -3,6 +3,8 @@ from collections import defaultdict
 from ascii_graph import Pyasciigraph
 from ascii_graph.colors import *
 from ascii_graph.colordata import vcolor
+import aiofiles
+import asyncio
 import time
 
 parser = argparse.ArgumentParser(description="This script plots histogram of most used words in given file")
@@ -14,13 +16,18 @@ args = parser.parse_args()
 
 t1 = time.time()
 
-with open(args.file, encoding="utf8") as file:
-    x = defaultdict(int)
-    for line in file:
-        verse = line.lower().translate({ord(i): None for i in "123456789.,:;!?()«»…-—―*"}).strip().split()
-        for i in verse:
-            x[i] += 1
 
+async def main():
+    async with aiofiles.open(args.file, encoding="utf8", mode='r') as file:
+        x = defaultdict(int)
+        async for line in file:
+            verse = line.lower().translate({ord(i): None for i in "123456789.,:;!?()«»…-—―*"}).strip().split()
+            for i in verse:
+                x[i] += 1
+    return x
+
+
+x = asyncio.run(main())
 t2 = time.time()
 
 ignored = args.l.translate({ord(i): None for i in ","}).split()

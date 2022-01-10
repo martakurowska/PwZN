@@ -29,8 +29,8 @@ def timer(func):
 def function(**kwargs):
     lap = random.random()
     time.sleep(lap)
-    print("Boop")
+    print("Hello")
 
 
-function(n=20)
+function(n=8)
 # function()
